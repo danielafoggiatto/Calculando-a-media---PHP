@@ -19,5 +19,6 @@ if (isset($_GET["n1"]) && isset($_GET["n2"]) && isset($_GET["n3"])) {
     $n3 = $_GET["n3"];
 
     $media = ($n1 + $n2 + $n3) / 3;
-    echo "<h2>A média dos números $n1, $n2 e $n3 é: " . number_format($media) . "</h2>";
+    echo "<h2>A média dos números $n1, $n2 e $n3 é: </h2>";
+    echo "<h1>" . number_format($media, 2) . "</h1>";
 }
